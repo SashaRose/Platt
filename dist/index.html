@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sasha Rose</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=divice-width, initial-scale=1.0, user-scalable=no"/>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Libre+Franklin" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <div id="container">
+    <div id="navbar">
+      <div id="nav-container">
+        <div id="logo-container" class="nav-column">
+           <i class="fa fa-cube" id="logo-icon"></i> <span id="logo-text">Platt Box</span>
+        </div>
+        <div id="search" class="nav-column">
+          <div id="searchbar">
+            <input id="search-field" type="text" placeholder="Search Customers"></input>
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+        <div id="small-menu">
+          <i class="fa fa-search small-menu-icons"></i>
+          <i id="hamburger" class="fa fa-bars small-menu-icons"></i>
+        </div>
+      </div>
+    </div>
+    <div id="hero-bar">
+      <div><img src="images/platt-circle.png" alt="Platt" /></div>
+      <div>Hillsboro (1234)</div>
+    </div>
+    <div id="content">
+      <div id="ui-left" class="left">
+        <div id="user-panel">
+          <div class="left">
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/dd/a1/63/dda1632030db57796b9730598907e684.jpg" id="user-avatar" alt="avatar"/>
+          </div>
+          <div class="left" id="user-info">
+            <h3>Nike Inc.</h3>
+            <p style="font-size: 11px;">emailaddress@domain.com</p>
+          </div>
+          <div class="left" id="user-info-gear"><i class="fa fa-gear"></i></div>
+        </div>
+        <br clear="all"/>
+        <div id="nav-panel">
+          <ul>
+            <li><i class="fa fa-clock-o"></i> Recent</li>
+            <li><i class="fa fa-file-o"></i> Files</li>
+            <li><i class="fa fa-folder"></i> Folders</li>
+            <li><i class="fa fa-picture-o"></i> Photos</li>
+            <li><i class="fa fa-bell-o"></i> Notification <div class="notifications-pill">3</div></li>
+            <li><i class="fa fa-sign-in"></i> Sign Out</li>
+          </ul>
+        </div>
+      </div>
+      <div id="small-ui-left" class="left">
+        <div id="content-header">
+          <span class="light-text">BOX/</span><span class="dark-text">Nike Inc.</span>
+          <div id="class-header-nav">
+            <i class="fa fa-file-text-o"></i>
+            <i class="fa fa-plus-square-o"></i>
+            <i class="fa fa-trash-o"></i>
+          </div>
+        </div>
+        <div id="small-header">
+          <span class="light-text">BOX/</span><span class="dark-text">Hillsboro</span>
+          <div style="float:right">
+            <div class="notifications-pill">3</div>
+            <i id="small-bell" class="fa fa-bell-o"></i>
+            <i id="small-ellipsis" class="fa fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div id="small-search">
+          <input type="text" id="small-search-field" placeholder="Looking for"/>
+        </div>
+        <div id="small-filter">
+          <ul>
+            <li>Name</li>
+            <li>Size</li>
+            <li class="active">Date</li>
+          </ul>
+        </div>
+        <br clear="all"/>
+        <table id="data-table">
+          <tr id="data-table-header-row">
+            <th class="data-table-header-cell">Name</th>
+            <th class="size-column">Size</th>
+            <th>Date</th>
+            <th></th>
+          </tr>
+          <tbody>
+            <tr class="data-row">
+              <td><i class="fa fa-folder-o table-name"></i> Folder Name</td>
+              <td class="size-column">2.56mb</td>
+              <td style="color: red">New</td>
+              <td><i class="fa fa-ellipsis-v"></i></td>
+            </tr>
+            <tr class="data-row">
+              <td><i class="fa fa-folder-o table-name"></i> Folder Name</td>
+              <td class="size-column">2.56mb</td>
+              <td style="color: grey">1 day ago</td>
+              <td><i class="fa fa-ellipsis-v"></i></td>
+            </tr>
+            <tr class="data-row">
+              <td><i class="fa fa-folder-o table-name"></i> Folder Name</td>
+              <td class="size-column">2.56mb</td>
+              <td style="color: red">New</td>
+              <td><i class="fa fa-ellipsis-v"></i></td>
+            </tr>
+            <tr class="data-row">
+              <td><i class="fa fa-folder-o table-name"></i> Folder Name</td>
+              <td class="size-column">2.56mb</td>
+              <td style="color: red">New</td>
+              <td><i class="fa fa-ellipsis-v"></i></td>
+            </tr>
+            <tr class="data-row">
+              <td><i class="fa fa-file-word-o table-name"></i> File Name</td>
+              <td class="size-column">2.56mb</td>
+              <td>04-14-2016</td>
+              <td><i class="fa fa-ellipsis-v"></i></td>
+            </tr>
+            <tr class="data-row">
+              <td><i class="fa fa-file-word-o table-name"></i> File Name</td>
+              <td class="size-column">128mb</td>
+              <td>04-14-2016</td>
+              <td><i class="fa fa-ellipsis-v"></i></td>
+            </tr>
+            <tr class="data-row">
+              <td><img src="https://s-media-cache-ak0.pinimg.com/236x/98/52/30/985230336b473711749d58c06c982a86.jpg" class="file-bubble-icon table-name"> File Name</td>
+              <td class="size-column">128mb</td>
+              <td>04-14-2016</td>
+              <td><i class="fa fa-ellipsis-v"></i></td>
+            </tr>
+            <tr class="data-row">
+              <td><i class="fa fa-file-zip-o table-name"></i> File Name</td>
+              <td class="size-column">128mb</td>
+              <td>04-14-2016</td>
+              <td><i class="fa fa-ellipsis-v"></i></td>
+            </tr>
+            <tr class="data-row">
+              <td><i class="fa fa-file-word-o table-name"></i> File Name</td>
+              <td class="size-column">128mb</td>
+              <td>04-14-2016</td>
+              <td><i class="fa fa-ellipsis-v"></i></td>
+            </tr>
+            <tr class="data-row">
+              <td><i class="fa fa-file-word-o table-name"></i> File Name</td>
+              <td class="size-column">128mb</td>
+              <td>04-14-2016</td>
+              <td><i class="fa fa-ellipsis-v"></i></td>
+            </tr>
+            <tr class="data-row">
+              <td><span class="table-name"><img src="https://s-media-cache-ak0.pinimg.com/236x/98/52/30/985230336b473711749d58c06c982a86.jpg" class="file-bubble-icon"></span> File Name</td>
+              <td class="size-column">2.56mb</td>
+              <td>04-14-2016</td>
+              <td><i class="fa fa-ellipsis-v"></i></td>
+            </tr>
+            <tr class="data-row">
+              <td><i class="fa fa-file-zip-o table-name"></i> File Name</td>
+              <td class="size-column">128mb</td>
+              <td>04-14-2016</td>
+              <td><i class="fa fa-ellipsis-v"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="file-actions">
+      <ul id="file-actions-menu">
+        <li>
+          <div><i class="fa fa-file-word-o" id="file-actions-icon"></i></div>
+          <div>
+            <div id="file-actions-text-large">File Name.doc</div>
+            <div id="file-actions-text-small">box/customername/</div>
+          </div>
+        </li>
+        <li id="rename">Rename</li>
+        <li>Move</li>
+        <li>Copy</li>
+        <li>Comment</li>
+        <li>Attach to Customer</li>
+      </ul>
+    </div>
+    <div id="rename-folder">
+      <div id="rename-text">Rename Folder</div>
+      <div id="rename-name">Name</div>
+      <div id="rename-buttons">
+        <button class="rename-button" id="cancel">CANCEL</button>
+        <button class="rename-button">RENAME</button>
+      </div>
+    </div>
+
+  </div>
+  <div id="black-out"></div>
+  <nav id="small-nav">
+    <div id="small-menu-header">
+      <span class="small-menu-title">MENU</span>
+      <span class="small-close"><i id="small-menu-close" class="fa fa-close"></i></span>
+    </div>
+    <div id="small-user-info">
+      <div><img src="http://www.incubatoru.com/wp-content/uploads/2014/05/logos_nike.png" alt="Nike logo" class="small-user-logo"/></div>
+      <div id="small-user-name">
+        <p class="small-user-name">Nike Inc.</p>
+        <p class="small-user-email">emailadress@domain.com</p>
+      </div>
+      <div>
+        <i id="small-user-settings" class="fa fa-gear"></i>
+      </div>
+    </div>
+    <ul>
+      <li><i class="fa fa-clock-o s-menu-image"></i> Recent</li>
+      <li><i class="fa fa-file-o s-menu-image"></i> Files</li>
+      <li><i class="fa fa-folder s-menu-image"></i> Folders</li>
+      <li><i class="fa fa-picture-o s-menu-image"></i> Photos</li>
+      <li><i class="fa fa-bell-o s-menu-image"></i> Notification</li>
+      <li><i class="fa fa-sign-in s-menu-image"></i> Sign Out</li>
+    </ul>
+  </nav>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
